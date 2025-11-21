@@ -143,7 +143,7 @@ const data = {
     },
     {
       name: "Sales & Marketing",
-      url: "#",
+      url: "/ecommerce/marketing",
       icon: PieChart,
     },
     {

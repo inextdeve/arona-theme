@@ -1,3 +1,4 @@
+"use client";
 import { CartesianGrid, Line, LineChart, XAxis } from "recharts";
 import { TrendingUp } from "lucide-react";
 import {
@@ -8,32 +9,32 @@ import {
 } from "@/components/ui/chart";
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  customer: {
+    label: "Customers",
     color: "var(--chart-1)",
   },
 } satisfies ChartConfig;
 
 const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
+  { month: "January", customer: 186 },
+  { month: "February", customer: 305 },
+  { month: "March", customer: 237 },
+  { month: "April", customer: 73 },
+  { month: "May", customer: 209 },
+  { month: "June", customer: 214 },
 ];
 
-export default function DashHeadCard() {
+export default function NewCustomersCard() {
   return (
     <div className="w-full">
       <div className="relative border-r border-gray-200 pr-10">
         {/* Header */}
         <div className="flex items-center">
           <div className="flex-1">
-            <h3 className="mb-2 text-lg font-semibold">New Users</h3>
+            <h3 className="mb-2 text-lg font-semibold">New Customers</h3>
             <h2 className="text-2xl font-semibold leading-none">705</h2>
           </div>
-          <div>
+          <div className="w-[150px] h-[80px]">
             <ChartContainer config={chartConfig}>
               <LineChart
                 accessibilityLayer
@@ -44,21 +45,14 @@ export default function DashHeadCard() {
                 }}
               >
                 <CartesianGrid vertical={false} />
-                <XAxis
-                  dataKey="month"
-                  tickLine={false}
-                  axisLine={false}
-                  tickMargin={8}
-                  tickFormatter={(value) => value.slice(0, 3)}
-                />
                 <ChartTooltip
                   cursor={false}
                   content={<ChartTooltipContent hideLabel />}
                 />
                 <Line
-                  dataKey="desktop"
+                  dataKey="customer"
                   type="natural"
-                  stroke="var(--color-desktop)"
+                  stroke="var(--color-customer)"
                   strokeWidth={2}
                   dot={false}
                 />
