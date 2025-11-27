@@ -15,7 +15,7 @@ const Page = () => {
           <TotalSalesChart />
           <StatsCards />
         </div>
-        <div className="grid xxl:grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-4 mt-4">
           <RecentOrdersCard />
           <NewCustomersList />
         </div>

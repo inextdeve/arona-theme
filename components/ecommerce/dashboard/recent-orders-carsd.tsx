@@ -27,7 +27,7 @@ function OrdersCard({ title = "Recent Orders", orders }: OrderCardProps) {
   );
 
   return (
-    <Card className="w-full rounded-2xl min-h-[500px] mt-4">
+    <Card className="w-full rounded-2xl min-h-[500px] lg:col-span-2">
       {/* Header */}
       <CardHeader className="flex flex-row items-center justify-between pb-2">
         <CardTitle className="text-lg font-bold">{title}</CardTitle>

@@ -10,6 +10,7 @@ import {
   GalleryVerticalEnd,
   LayoutGrid,
   Map,
+  PackagePlus,
   PieChart,
   Settings2,
   SquareTerminal,
@@ -147,9 +148,9 @@ const data = {
       icon: PieChart,
     },
     {
-      name: "Travel",
-      url: "#",
-      icon: Map,
+      name: "Add Product",
+      url: "/ecommerce/add-product",
+      icon: PackagePlus,
     },
   ],
 };

@@ -22,6 +22,8 @@ import {
   Paperclip,
   Calendar,
 } from "lucide-react";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 
 const users = [
   {
@@ -83,9 +85,12 @@ export default function NewCustomersList() {
 
       {/* USERS LIST */}
       <CardContent className="p-0 max-h-[360px] overflow-y-auto">
-        <div className="flex flex-col gap-4 p-4">
+        <div className="flex flex-col">
           {users.map((u, index) => (
-            <div key={index} className="flex items-center gap-4">
+            <Label
+              key={index}
+              className="flex items-center gap-4 p-2 hover:bg-accent/50 has-aria-checked:bg-blue-100  dark:has-aria-checked:bg-blue-950"
+            >
               <Image
                 src={u.avatar}
                 width={45}
@@ -100,32 +105,47 @@ export default function NewCustomersList() {
               </div>
 
               <Checkbox />
-            </div>
+            </Label>
           ))}
         </div>
       </CardContent>
 
       {/* FOOTER ICONS */}
       <CardFooter className="flex justify-between px-5 py-3 border-t">
-        <button className="text-muted-foreground hover:text-primary transition">
+        <Button
+          variant="link"
+          className="cursor-pointer text-muted-foreground hover:text-primary transition"
+        >
           <Share2 className="w-5 h-5" />
-        </button>
+        </Button>
 
-        <button className="text-muted-foreground hover:text-primary transition">
+        <Button
+          variant="link"
+          className="cursor-pointer text-muted-foreground hover:text-green-500 transition"
+        >
           <MessageCircle className="w-5 h-5" />
-        </button>
+        </Button>
 
-        <button className="text-muted-foreground hover:text-primary transition">
+        <Button
+          variant="link"
+          className="cursor-pointer text-muted-foreground hover:text-yellow-500 transition"
+        >
           <Mail className="w-5 h-5" />
-        </button>
+        </Button>
 
-        <button className="text-muted-foreground hover:text-primary transition">
+        <Button
+          variant="link"
+          className="cursor-pointer text-muted-foreground hover:text-blue-500 transition"
+        >
           <Paperclip className="w-5 h-5" />
-        </button>
+        </Button>
 
-        <button className="text-muted-foreground hover:text-primary transition">
+        <Button
+          variant="link"
+          className="cursor-pointer text-muted-foreground hover:text-red-500 transition"
+        >
           <Calendar className="w-5 h-5" />
-        </button>
+        </Button>
       </CardFooter>
     </Card>
   );
