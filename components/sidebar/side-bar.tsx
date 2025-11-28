@@ -9,7 +9,9 @@ import {
   Frame,
   GalleryVerticalEnd,
   LayoutGrid,
+  ListCheck,
   Map,
+  Package,
   PackagePlus,
   PieChart,
   Settings2,
@@ -151,6 +153,16 @@ const data = {
       name: "Add Product",
       url: "/ecommerce/add-product",
       icon: PackagePlus,
+    },
+    {
+      name: "Products",
+      url: "/ecommerce/products",
+      icon: Package,
+    },
+    {
+      name: "Orders",
+      url: "/ecommerce/orders",
+      icon: ListCheck,
     },
   ],
 };

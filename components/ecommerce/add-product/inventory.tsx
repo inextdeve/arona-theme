@@ -4,9 +4,11 @@ import {
   GiftIcon,
   Globe,
   HeartIcon,
+  Package,
   RotateCw,
   Settings2,
   TableOfContents,
+  Truck,
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -32,12 +34,12 @@ const tabs = [
   {
     name: "Restock",
     value: "restock",
-    icon: HeartIcon,
+    icon: Package,
   },
   {
     name: "Shipping",
     value: "shipping",
-    icon: GiftIcon,
+    icon: Truck,
   },
   {
     name: "Global Delivery",
@@ -66,7 +68,7 @@ export default function Inventory() {
               <span>
                 <TabsTrigger
                   value={value}
-                  className="flex w-full justify-start items-center gap-1"
+                  className="flex w-full justify-start items-center gap-1 cursor-pointer"
                   aria-label="tab-trigger"
                 >
                   <Icon /> {name}

@@ -82,7 +82,7 @@ export default function GalleryUpload({
   };
 
   return (
-    <div className={cn("w-full max-w-4xl", className)}>
+    <div className={cn("w-full", className)}>
       {/* Upload Area */}
       <div
         className={cn(
