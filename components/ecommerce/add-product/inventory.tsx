@@ -65,7 +65,7 @@ export default function Inventory() {
         <Tabs defaultValue="price" className="flex-row gap-4">
           <TabsList className="h-full grid gap-2">
             {tabs.map(({ icon: Icon, name, value }) => (
-              <span>
+              <span key={value}>
                 <TabsTrigger
                   value={value}
                   className="flex w-full justify-start items-center gap-1 cursor-pointer"

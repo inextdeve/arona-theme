@@ -6,6 +6,7 @@ import {
   BookOpen,
   Bot,
   Command,
+  Component,
   Frame,
   GalleryVerticalEnd,
   LayoutGrid,
@@ -13,10 +14,14 @@ import {
   Map,
   Package,
   PackagePlus,
+  PersonStanding,
   PieChart,
+  ScanBarcode,
   Settings2,
   SquareTerminal,
   Store,
+  User,
+  Users,
 } from "lucide-react";
 
 import { CollapsibleNav } from "./collapsible-nav";
@@ -53,22 +58,26 @@ const data = {
   ],
   apps: [
     {
-      title: "Playground",
+      title: "Components",
       url: "#",
-      icon: SquareTerminal,
+      icon: Component,
       isActive: true,
       items: [
         {
-          title: "History",
-          url: "#",
+          title: "Cards",
+          url: "/components/cards",
         },
         {
-          title: "Starred",
-          url: "#",
+          title: "Animated Cards",
+          url: "/components/animated-cards",
         },
         {
-          title: "Settings",
-          url: "#",
+          title: "Buttons",
+          url: "/components/buttons",
+        },
+        {
+          title: "Loaders",
+          url: "/components/loaders",
         },
       ],
     },
@@ -163,6 +172,21 @@ const data = {
       name: "Orders",
       url: "/ecommerce/orders",
       icon: ListCheck,
+    },
+    {
+      name: "Orders details",
+      url: "/ecommerce/order-details",
+      icon: ScanBarcode,
+    },
+    {
+      name: "Customers",
+      url: "/ecommerce/customers",
+      icon: Users,
+    },
+    {
+      name: "Customer details",
+      url: "/ecommerce/customer-details",
+      icon: User,
     },
   ],
 };

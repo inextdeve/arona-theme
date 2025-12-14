@@ -3,13 +3,13 @@ import { OrderStatusFilter } from "./order-filter";
 import { OrderTable } from "./order-table/order-table";
 import { FiltersToolbar } from "./toolbar/toolbar";
 
-const orders = [
+export const orders = [
   {
     id: "#2415",
     price: "$87",
     customer: {
       name: "John Doe",
-      avatar: "/assets/images/avatars/avatar-1.jpg",
+      avatar: "/assets/images/avatars/01.png",
     },
     payment_status: "Completed",
     completed_payment: "$87",
@@ -21,7 +21,7 @@ const orders = [
     price: "$129",
     customer: {
       name: "Emily Carter",
-      avatar: "/assets/images/avatars/avatar-2.jpg",
+      avatar: "/assets/images/avatars/02.png",
     },
     payment_status: "Pending Payment",
     completed_payment: "$0",
@@ -33,7 +33,7 @@ const orders = [
     price: "$42",
     customer: {
       name: "Michael Brown",
-      avatar: "/assets/images/avatars/avatar-3.jpg",
+      avatar: "/assets/images/avatars/03.png",
     },
     payment_status: "Incomplete",
     completed_payment: "$0",
@@ -45,7 +45,7 @@ const orders = [
     price: "$299",
     customer: {
       name: "Sophia Lee",
-      avatar: "/assets/images/avatars/avatar-4.jpg",
+      avatar: "/assets/images/avatars/04.png",
     },
     payment_status: "Completed",
     completed_payment: "$299",
@@ -57,7 +57,7 @@ const orders = [
     price: "$15",
     customer: {
       name: "Liam Johnson",
-      avatar: "/assets/images/avatars/avatar-5.jpg",
+      avatar: "/assets/images/avatars/05.png",
     },
     payment_status: "Refunded",
     completed_payment: "$0",
@@ -69,7 +69,7 @@ const orders = [
     price: "$68",
     customer: {
       name: "Olivia Martinez",
-      avatar: "/assets/images/avatars/avatar-6.jpg",
+      avatar: "/assets/images/avatars/06.png",
     },
     payment_status: "Failed",
     completed_payment: "$0",
@@ -81,7 +81,7 @@ const orders = [
     price: "$220",
     customer: {
       name: "Noah Wilson",
-      avatar: "/assets/images/avatars/avatar-7.jpg",
+      avatar: "/assets/images/avatars/03.png",
     },
     payment_status: "Completed",
     completed_payment: "$220",
@@ -93,7 +93,7 @@ const orders = [
     price: "$54",
     customer: {
       name: "Ava Davis",
-      avatar: "/assets/images/avatars/avatar-8.jpg",
+      avatar: "/assets/images/avatars/08.png",
     },
     payment_status: "Pending Payment",
     completed_payment: "$0",
@@ -105,7 +105,7 @@ const orders = [
     price: "$430",
     customer: {
       name: "James Miller",
-      avatar: "/assets/images/avatars/avatar-9.jpg",
+      avatar: "/assets/images/avatars/05.png",
     },
     payment_status: "Completed",
     completed_payment: "$430",
@@ -117,7 +117,7 @@ const orders = [
     price: "$11",
     customer: {
       name: "Mia Garcia",
-      avatar: "/assets/images/avatars/avatar-10.jpg",
+      avatar: "/assets/images/avatars/02.png",
     },
     payment_status: "Incomplete",
     completed_payment: "$0",

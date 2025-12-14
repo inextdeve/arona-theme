@@ -2,7 +2,7 @@ import { OrderRow } from "./order-row";
 
 export function OrderTable({ orders }: { orders: any[] }) {
   return (
-    <div className="border rounded-xl mt-6 overflow-hidden">
+    <div className="border rounded-xl overflow-hidden">
       <div className="overflow-auto">
         <table className="w-full text-sm">
           <thead className="bg-muted">

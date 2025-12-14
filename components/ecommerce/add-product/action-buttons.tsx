@@ -4,7 +4,7 @@ import { XCircle, CloudDownload, Send } from "lucide-react";
 export function ActionButtons() {
   return (
     <div className="border rounded-xl p-4 bg-white shadow-sm">
-      <div className="flex items-center gap-3 w-full">
+      <div className="flex items-center gap-3 w-full flex-wrap">
         <Button
           variant="outline"
           className="bg-red-200/50 hover:text-red-600 text-red-600 border-red-600 flex-1 cursor-pointer"
