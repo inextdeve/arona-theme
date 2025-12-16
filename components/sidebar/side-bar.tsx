@@ -45,16 +45,8 @@ const data = {
     avatar: "/avatars/shadcn.jpg",
   },
   themes: [
-    {
-      name: "E-Commerce",
-      logo: Store,
-      plan: "Plateform",
-    },
-    {
-      name: "Apps",
-      logo: LayoutGrid,
-      plan: "Startup",
-    },
+    { id: "ecom", name: "E-Commerce", logo: Store, plan: "Plateform" },
+    { id: "app", name: "Apps", logo: LayoutGrid, plan: "Startup" },
   ],
   apps: [
     {
@@ -82,13 +74,13 @@ const data = {
       ],
     },
     {
-      title: "Models",
+      title: "Pages",
       url: "#",
       icon: Bot,
       items: [
         {
-          title: "Genesis",
-          url: "#",
+          title: "Plans",
+          url: "/apps/plans",
         },
         {
           title: "Explorer",
@@ -213,8 +205,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         />
       </SidebarHeader>
       <SidebarContent>
-        <SimpleNav title={"E-Commerce"} items={data.eCommerce} />
-        <CollapsibleNav items={data.apps} />
+        {activeTheme.id === "ecom" && (
+          <SimpleNav title={"E-Commerce"} items={data.eCommerce} />
+        )}
+        {activeTheme.id === "app" && <CollapsibleNav items={data.apps} />}
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />
