@@ -78,6 +78,7 @@ const data = {
       url: "#",
       icon: Bot,
       items: [
+        { title: "File Manager", url: "/apps/file-manager" },
         {
           title: "Plans",
           url: "/apps/plans",
